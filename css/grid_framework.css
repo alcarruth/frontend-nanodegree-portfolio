@@ -1,0 +1,56 @@
+
+/*
+  what does border-box do?
+  is it required to work with the above?
+  I think so.  
+  Should we use these first two 
+  style chunks in all future pages?
+  
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+  The CSS code is the same that Cameron was describing, with one
+  little addition - a class grid for an outer div that will contain all
+  your other divs. The purpose of it is to limit the max-width of the
+  page and center content in case your user is looking at the page on a
+  very large screen. Centering is done by defining "margin: 0 auto"
+  (auto margin horizontally).
+  */
+.grid {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    /* make sure I know flex */
+    /* x-ref: Intro to HTML and CSS Lessons 1 and 2
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */
+    /* http://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;           /* Chrome 29+, IE 11+, Mozilla 28+ */
+    display: -webkit-flex;   /* Safari */
+    flex-wrap: wrap;
+}
+
+.col-1  { width:  8.33333%; }
+.col-2  { width: 16.66666%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33333%; }
+.col-5  { width: 41.66666%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33333%; }
+.col-8  { width: 66.66666%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33333%; }
+.col-11 { width: 91.66666%; }
+.col-12 { width: 100%; }
+

@@ -1,0 +1,23 @@
+main-document
+ color-nav
+ content
+   header
+     udacity-img
+     person
+       name
+       occupation
+   big-img
+   featured-work
+     heading
+     sample-1
+       img
+       name
+       link
+     sample-2
+       img
+       name
+       link
+     sample-3
+       img
+       name
+       link
