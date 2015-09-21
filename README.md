@@ -5,15 +5,15 @@
 
 Download project:
 
-`$ git clone git@github.com:alcarruth/frontend-p1-portfolio.git\n`
+`$ git clone git@github.com:alcarruth/frontend-p1-portfolio.git`
 
-`$ cd frontend-p1-portfolio/dist\n`
+`$ cd frontend-p1-portfolio/dist`
 
 View regular portfolio:
-`$ google-chrome portfolio.html\n`
+`$ google-chrome portfolio.html`
 
 or, for version with inline images:
- `$ google-chrome portfolio_inline.html\n`
+ `$ google-chrome portfolio_inline.html`
 
 ## Features
 
@@ -31,10 +31,8 @@ or, for version with inline images:
  * dist/portfolio_inline.html (with inline data url images)
  * dist/images/
  * dist/style/
-
  * python/portfolio.py
  * python/portfolio_util.py
-
  * src/images/
  * src/style/
  * src/templates/
