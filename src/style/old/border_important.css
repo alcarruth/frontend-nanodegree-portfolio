@@ -1,7 +1,0 @@
-/*
-  !important overrides more specific rules
-  https://css-tricks.com/when-using-important-is-the-right-choice/
-  once we're done box sizing, we can remove this rule
-*/
-
-.box { border: 2px solid red !important; }
