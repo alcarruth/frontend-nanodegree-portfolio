@@ -20,21 +20,21 @@ or, for version with inline images:
 ## Features
 
  * media queries implement responsive design
- * optional inline images (see dist/portfolio_inline.html)
- * css source split into colors.css, style.css and sizes.css these are concatenated into portfolio.css
- * image sizes reduced using grunt and imageMagick
+ * optional inline images (see `dist/portfolio_inline.html`)
+ * css source split into `colors.css, style.css and sizes.css` these are concatenated into `portfolio.css`
+ * image sizes reduced using `grunt` and `imageMagick`
  * "Featured Work" includes "Fresh Tomatoes" from fullstack nano degree P1 and "Jane Doett - front end Ninja" from responsive design course
- * semi-automated build (see python/portfolio.py)
+ * semi-automated build (see `python/portfolio.py`)
 
 ## Directory Structure
 
- * dist/portfolio.html
- * dist/portfolio_inline.html (with inline data url images)
- * dist/images/
- * dist/style/
- * python/portfolio.py
- * python/portfolio_util.py
- * src/images/
- * src/style/
- * src/templates/
+ * `dist/portfolio.html`
+ * `dist/portfolio_inline.html` (with inline data url images)
+ * `dist/images/`
+ * `dist/style/`
+ * `python/portfolio.py`
+ * `python/portfolio_util.py`
+ * `src/images/`
+ * `src/style/`
+ * `src/templates/`
 
