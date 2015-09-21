@@ -3,11 +3,13 @@
 /* style.css */
 
 /* enable/disable border outlining */
-/* .important { border: 2px solid red !important; }  /* */
+/* .important { border: 2px solid red !important; }
+  /* */
 
 @import url(https://fonts.googleapis.com/css?family=Kalam);
 
 * { font-family: 'Kalam', cursive; }
+
 
 body {
     margin: auto;
@@ -15,38 +17,48 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
 .container {
     display: flex;           /* Chrome 29+, IE 11+, Mozilla 28+ */
     display: -webkit-flex;   /* Safari */
     flex-wrap: wrap;
     justify-content: center;
 }
+
 h1.header-text {
     text-align: left;
 }
+
 p.header-text {
     font-weight: 400;
     text-align: left;
 }
+
 h2.featured-work {
     font-weight: 400;
     text-align: center;
 }
+
 div.featured-tiles {
     justify-content: space-between;
 }
+
 div.featured-tile {
     overflow: hidden;
 }
+
 img.featured-work {
     border-style: solid;
 }
+
 h3.featured-work {
     font-weight: 400;
     text-align: center;
 }
+
 div.footer {
     overflow: auto;
     justify-content: center;
 }
+
 

@@ -6,26 +6,33 @@
     border-color: transparent;
     background-color: transparent;
 }
+
 body {
     background-color: #334;
 }
+
 div.page {
     color: #ffd;
     background-color: #181825;
 }
+
 hr {
     /* match this to page color (above) */
     border-color:   #ffd;
 }
+
 div.featured-tile {
     color: #ccc;
     background-color: #bcb;
     border-color: #222;
 }
+
 div.featured-tile:hover {
     background-color: #ffd;
 }
+
 img.featured-work {
     border-color: #222;
 }
+
 
