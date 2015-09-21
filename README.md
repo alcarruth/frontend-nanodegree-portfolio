@@ -5,8 +5,9 @@
 
 Download project:
 
- `$ git clone git@github.com:alcarruth/frontend-p1-portfolio.git\n`
- `$ cd frontend-p1-portfolio/dist\n`
+`$ git clone git@github.com:alcarruth/frontend-p1-portfolio.git\n`
+
+`$ cd frontend-p1-portfolio/dist\n`
 
 View regular portfolio:
 `$ google-chrome portfolio.html\n`
