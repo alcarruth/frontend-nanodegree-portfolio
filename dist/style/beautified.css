@@ -1,3 +1,103 @@
+/* portfolio.css generated from ['colors.css', 'style.css', 'sizes.css'] */
+/* colors.css */
+
+* {
+    border-color: transparent;
+}
+
+body {
+    color: #ffd;
+    background-color: #181825;
+}
+
+hr {
+    /* match this to page color (above) */
+    border-color: #ffd;
+    background-color: transparent;
+}
+
+.featured-tile {
+    color: #ccc;
+    background-color: #bcb;
+    border-color: #222;
+}
+
+.featured-tile:hover {
+    background-color: #ffd;
+}
+
+.featured-img {
+    border-color: #222;
+    background-color: transparent;
+}
+
+
+
+/* style.css */
+
+/* enable/disable border outlining */
+/*
+.important { 
+    border: 2px solid red !important;
+}
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Kalam);
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Kalam', cursive;
+}
+
+.container {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-h1 {
+    text-align: left;
+}
+
+#header-p {
+    font-weight: 400;
+    text-align: left;
+}
+
+#featured-work {
+    font-weight: 400;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#featured-work-h2 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.featured-tile {
+    overflow: hidden;
+}
+
+.featured-tile-img {
+    border-style: solid;
+}
+
+footer {
+    overflow: auto;
+    justify-content: center;
+}
+
+
 
 /* sizes.css */
 
@@ -118,7 +218,7 @@
         max-width: 900px;
         margin: auto;
         border-width: 1px;
-    }
+    };
 }
 
 /* three tiles wide */
@@ -146,8 +246,7 @@
         width: 95%;
         margin: 2%;
         margin-bottom: -12px;
-    }
-
+    };
 }
 
 
@@ -175,8 +274,7 @@
         width: 95%;
         margin: 2%;
         margin-bottom: -10px;
-    }
-
+    };
 }
 
 
@@ -204,7 +302,7 @@
         width: 95%;
         margin: 2%;
         margin-bottom: -10px;
-    }
+    };
 }
 
 
@@ -264,5 +362,5 @@
         margin: 2%;
         margin-bottom: -8px;
         border-width: 0;
-    }
+    };
 }

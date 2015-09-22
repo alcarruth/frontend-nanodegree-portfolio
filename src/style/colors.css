@@ -1,38 +1,33 @@
-
-/* ----------------------------------------------------------------- */
 /* colors.css */
 
 * {
     border-color: transparent;
-    background-color: transparent;
 }
 
 body {
-    background-color: #334;
-}
-
-div.page {
     color: #ffd;
     background-color: #181825;
 }
 
 hr {
     /* match this to page color (above) */
-    border-color:   #ffd;
+    border-color: #ffd;
+    background-color: transparent;
 }
 
-div.featured-tile {
+.featured-tile {
     color: #ccc;
     background-color: #bcb;
     border-color: #222;
 }
 
-div.featured-tile:hover {
+.featured-tile:hover {
     background-color: #ffd;
 }
 
-img.featured-work {
+.featured-img {
     border-color: #222;
+    background-color: transparent;
 }
 
 

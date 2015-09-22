@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 
 import os
 import sys
@@ -11,47 +11,26 @@ dist_dir = portfolio_root + '/dist/'
 src_dir =  portfolio_root + '/src/'
 template_dir = portfolio_root + '/src/templates/'
 
-img_template = read_file(template_dir + 'img_template.html')
-img_cls_template = read_file(template_dir + 'img_cls_template.html')
 tile_template = read_file(template_dir + 'tile_template.html')
 page_template = read_file(template_dir + 'page_template.html')
-
-class Image:
-
-    def __init__(self, src, alt, cls=''):
-        self.src = src
-        self.alt = alt
-        self.cls = cls
-
-    def to_html(self, inline=False):
-        if inline:
-            img = read_file(dist_dir + self.src, 'b')
-            src = data_url(img)
-        else:
-            src = self.src
-        if self.cls <> '':
-            html = img_cls_template.format(
-                src = src,
-                alt = self.alt,
-                cls = self.cls
-            )
-        else:
-            html = img_template.format(
-                src = self.src,
-                alt = self.alt
-            )
-        return html.strip()
 
 class Featured_Tile:
 
     def __init__(self, href, src, alt):
         self.href = href
-        self.img = Image(src, alt, 'featured-work')
+        self.src = src
+        self.alt = alt
 
     def to_html(self, inline=False):
+        if inline:
+            img = read_file(dist_dir + self.src, 'b')
+            src = data_url(img).strip()
+        else:
+            src = self.src
         html = tile_template.format(
-            href = self.href,
-            img = self.img.to_html(inline)
+            featured_tile_href = self.href,
+            featured_tile_alt = self.alt,
+            featured_tile_src = src
         )
         return html
 
@@ -88,16 +67,11 @@ tiles = [
     )
 ]
 
-al_image =  Image(
-    "images/al_carruth-600.jpg", 
-    "Picture of Al",
-    "header-logo"
-)
-
 def gen_html(inline=False):
     featured_tiles = str.join('\n', map(lambda(tile): tile.to_html(inline), tiles))
     page = page_template.format(
-        header_logo = al_image.to_html(),
+        header_logo_alt = "Picture of Al",
+        header_logo_src = "images/al_carruth-600.jpg", 
         featured_tiles = indent(featured_tiles,10)
     )
     return page
@@ -111,5 +85,6 @@ def gen_css():
     return css
 
 write_file(gen_html(), dist_dir + 'portfolio.html')
-write_file(gen_html(True), dist_dir + 'portfolio_inline.html')
+#write_file(gen_html(True), dist_dir + 'portfolio_inline.html')
 write_file(gen_css(), dist_dir + 'style/portfolio.css')
+

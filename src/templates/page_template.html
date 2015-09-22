@@ -1,49 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Portfolio </title>
-    <link rel="stylesheet"
-          href="https://normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-    <link rel="stylesheet" href="style/portfolio.css">
-  </head>
 
-  <body>
-    <div class="page container important">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Portfolio </title>
+  <link rel="stylesheet" href="https://normalize-css.googlecode.com/svn/trunk/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link rel="stylesheet" href="style/portfolio.css">
+</head>
 
-      <!-- header -->
-      <div class="header container important">
-        <div class="header-text important">
-          <h1 class="header-text"> Al Carruth </h1>
-          <p class="header-text"> FRONT-END NINJA </p>
+<body>
+
+    <header class="container important">
+        <div id="header-text" class="important">
+            <h1 id="header-h1"> Al Carruth </h1>
+            <p id="header-p"> FRONT-END NINJA </p>
         </div>
-        <div class="header-logo important">
-          {header_logo}
-        </div>
-      </div>
-
-      <hr>
-
-      <!-- featured work -->
-      <div class="featured-work important">
-        <h2 class="featured-work"> Featured Work </h2>
-
-        <div class="featured-tiles container important">
-{featured_tiles}
-        </div> <!-- featured-tiles -->
-
-      </div> <!-- featured-work -->
-
-      <hr>
-
-      <div class="footer container important">
+        <img id="header-logo" class="important"  alt="{header_logo_alt}" src="{header_logo_src}">
+    </header>
+    <hr>
+    <main id="featured-work" class="container important">
+        <h2 id="featured-work-h2"> Featured Work </h2>
+        {featured_tiles}
+    </main>
+    <hr>
+    <footer class="container important">
         <h3> Footer </h3>
-      </div>
+    </footer>
 
-    </div> <!-- page -->
-
-  </body>
+</body>
 </html>
-
