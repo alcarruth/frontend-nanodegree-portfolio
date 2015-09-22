@@ -68,11 +68,11 @@ tiles = [
 ]
 
 def gen_html(inline=False):
-    featured_tiles = str.join('\n', map(lambda(tile): tile.to_html(inline), tiles))
+    featured_tiles = str.join('', map(lambda(tile): tile.to_html(inline), tiles))
     page = page_template.format(
         header_logo_alt = "Picture of Al",
         header_logo_src = "images/al_carruth-600.jpg", 
-        featured_tiles = indent(featured_tiles,10)
+        featured_tiles = featured_tiles
     )
     return page
 
@@ -85,6 +85,6 @@ def gen_css():
     return css
 
 write_file(gen_html(), dist_dir + 'portfolio.html')
-#write_file(gen_html(True), dist_dir + 'portfolio_inline.html')
+write_file(gen_html(True), dist_dir + 'portfolio_inline.html')
 write_file(gen_css(), dist_dir + 'style/portfolio.css')
 

@@ -1,13 +1,6 @@
 
 /* style.css */
 
-/* enable/disable border outlining */
-/*
-.important { 
-    border: 2px solid red !important;
-}
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Kalam);
 
 body {
@@ -19,8 +12,8 @@ body {
 }
 
 .container {
-    display: flex;           /* Chrome 29+, IE 11+, Mozilla 28+ */
-    display: -webkit-flex;   /* Safari */
+    display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
 }
 

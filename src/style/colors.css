@@ -1,5 +1,12 @@
 /* colors.css */
 
+/* enable/disable border outlining */
+/*
+.important { 
+    border: 1px solid red !important;
+}
+*/
+
 * {
     border-color: transparent;
 }

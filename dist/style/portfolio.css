@@ -1,6 +1,13 @@
 /* portfolio.css generated from ['colors.css', 'style.css', 'sizes.css'] */
 /* colors.css */
 
+/* enable/disable border outlining */
+/*
+.important { 
+    border: 1px solid red !important;
+}
+*/
+
 * {
     border-color: transparent;
 }
@@ -34,13 +41,6 @@ hr {
 
 
 /* style.css */
-
-/* enable/disable border outlining */
-/*
-.important { 
-    border: 2px solid red !important;
-}
-*/
 
 @import url(https://fonts.googleapis.com/css?family=Kalam);
 
@@ -134,39 +134,38 @@ footer {
         max-width: 900px;
         margin: auto;
         padding-top: 3%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 14vw;
+        padding-right: 14vw;
         border-width: 1px;
     }
 
     #header-text {
         width: 50%;
         max-width: 450px;
-        padding-left: 5%;
-        padding-top: 5%;
         border-width: 1px;
     }
 
     #header-h1 {
-        font-size: 54px;
+        font-size: 5.4vw;
         font-weight: 300;
         border-width: 1px;
+        margin-top: 2vw;
         margin-bottom: -4%;
     }
 
     #header-p {
-        font-size: 18px;
+        font-size: 1.8vw;
         margin-top: 1%;
         border-width: 1px;
     }
 
     #header-logo {
-        width: 20vw;
-        height: 20vw;
-        max-width: 180px;
-        max-height: 180px;
+        width: 14vw;
+        height: 14vw;
+        max-width: 108px;
+        max-height: 108px;
         padding: 0;
-        padding-top: 5%;
+        margin-top: 0;
         border-width: 1px;
     }
 
@@ -184,8 +183,9 @@ footer {
     }
 
     #featured-work-h2 {
-        width: 80%;
+        width: 100%;
         margin: 10px;
+        font-size: 4vw;
         border-width: 1px;
     }
 
@@ -224,18 +224,6 @@ footer {
 /* three tiles wide */
 @media only screen and (max-width: 800px) {
 
-    #header-h1 {
-        font-size: 44px;
-    }
-
-    #header-p {
-        font-size: 15px;
-    }
-
-    featured-work-h2 {
-        font-size: 28px;
-    }
-
     .featured-tile {
         width: 30%;
         padding: 0;
@@ -254,18 +242,6 @@ footer {
 /* two tiles wide */
 @media only screen and (max-width: 600px) {
 
-    #header-h1 {
-        font-size: 36px;
-    }
-
-    #header-p {
-        font-size: 12px;
-    }
-
-    featured-work-h2 {
-        font-size: 26px;
-    }
-
     .featured-tile {
         width: 47%;
         padding: 0;
@@ -276,25 +252,11 @@ footer {
         margin: 2%;
         margin-bottom: -10px;
     }
-
 }
-
 
 /* two tiles wide */
 @media only screen and (max-width: 500px) {
 
-    #header-h1 {
-        font-size: 30px;
-    }
-
-    #header-p {
-        font-size: 12px;
-    }
-
-    #featured-work {
-        font-size: 24px;
-    }
-
     .featured-tile {
         width: 47%;
         padding: 0;
@@ -306,7 +268,6 @@ footer {
         margin-bottom: -10px;
     }
 }
-
 
 /* one tile wide */
 @media only screen and (max-width: 400px) {
