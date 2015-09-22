@@ -78,7 +78,9 @@ def gen_html(inline=False):
 
 def gen_css():
     dist_file = 'portfolio.css'
-    src_files = ['colors.css', 'style.css', 'sizes.css']
+    # put 'style.css' first 
+    # otherwise @import will not be valid CSS
+    src_files = ['style.css', 'colors.css', 'sizes.css']
     css = "/* %s generated from %s */\n" % (dist_file, src_files)
     for css_file in src_files:
        css += read_file(src_dir + 'style/' + css_file)

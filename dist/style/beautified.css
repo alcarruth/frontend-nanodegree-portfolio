@@ -1,44 +1,4 @@
-/* portfolio.css generated from ['colors.css', 'style.css', 'sizes.css'] */
-/* colors.css */
-
-/* enable/disable border outlining */
-/*
-.important { 
-    border: 1px solid red !important;
-}
-*/
-
-* {
-    border-color: transparent;
-}
-
-body {
-    color: #ffd;
-    background-color: #181825;
-}
-
-hr {
-    /* match this to page color (above) */
-    border-color: #ffd;
-    background-color: transparent;
-}
-
-.featured-tile {
-    color: #ccc;
-    background-color: #bcb;
-    border-color: #222;
-}
-
-.featured-tile:hover {
-    background-color: #ffd;
-}
-
-.featured-img {
-    border-color: #222;
-    background-color: transparent;
-}
-
-
+/* portfolio.css generated from ['style.css', 'colors.css', 'sizes.css'] */
 
 /* style.css */
 
@@ -95,6 +55,46 @@ header {
 footer {
     overflow: auto;
     justify-content: center;
+}
+
+
+/* colors.css */
+
+/* enable/disable border outlining */
+/*
+.important { 
+    border: 1px solid red !important;
+}
+*/
+
+* {
+    border-color: transparent;
+}
+
+body {
+    color: #ffd;
+    background-color: #181825;
+}
+
+hr {
+    /* match this to page color (above) */
+    border-color: #ffd;
+    background-color: transparent;
+}
+
+.featured-tile {
+    color: #ccc;
+    background-color: #bcb;
+    border-color: #222;
+}
+
+.featured-tile:hover {
+    background-color: #ffd;
+}
+
+.featured-img {
+    border-color: #222;
+    background-color: transparent;
 }
 
 
@@ -200,7 +200,7 @@ footer {
 
     .featured-tile-a {
         font-size: 12px;
-        margin: 0
+        margin: 0;
         padding: 0;
         border-width: 1px;
     }
