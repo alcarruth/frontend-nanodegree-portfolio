@@ -5,7 +5,7 @@
 
 Download project:
 
-`$ git clone git@github.com:alcarruth/frontend-p1-portfolio.git`
+`$ git clone git@github.com:alcarruth/portfolio.git`
 
 To view regular portfolio:
 
